@@ -3045,4 +3045,84 @@ Text Label 10800 5600 0    50   ~ 0
 IOT_168
 Text Label 10800 5850 0    50   ~ 0
 IOR_167
+$Comp
+L dk_Tactile-Switches:1825910-6 S1
+U 1 1 5E33EB87
+P 9600 4650
+F 0 "S1" H 9600 4997 60  0000 C CNN
+F 1 "1825910-6" H 9600 4891 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 9800 4850 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9800 4950 60  0001 L CNN
+F 4 "450-1650-ND" H 9800 5050 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 9800 5150 60  0001 L CNN "MPN"
+F 6 "Switches" H 9800 5250 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 9800 5350 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9800 5450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 9800 5550 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 9800 5650 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 9800 5750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9800 5850 60  0001 L CNN "Status"
+	1    9600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Tactile-Switches:1825910-6 S2
+U 1 1 5E3405E8
+P 9600 5300
+F 0 "S2" H 9600 5647 60  0000 C CNN
+F 1 "1825910-6" H 9600 5541 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 9800 5500 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9800 5600 60  0001 L CNN
+F 4 "450-1650-ND" H 9800 5700 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 9800 5800 60  0001 L CNN "MPN"
+F 6 "Switches" H 9800 5900 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 9800 6000 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9800 6100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 9800 6200 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 9800 6300 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 9800 6400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9800 6500 60  0001 L CNN "Status"
+	1    9600 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E341682
+P 9950 5500
+F 0 "#PWR06" H 9950 5250 50  0001 C CNN
+F 1 "GND" H 9955 5327 50  0000 C CNN
+F 2 "" H 9950 5500 50  0001 C CNN
+F 3 "" H 9950 5500 50  0001 C CNN
+	1    9950 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4550 9950 4550
+Wire Wire Line
+	9950 4550 9950 4750
+Wire Wire Line
+	9800 5200 9950 5200
+Connection ~ 9950 5200
+Wire Wire Line
+	9950 5200 9950 5400
+Wire Wire Line
+	9800 5400 9950 5400
+Connection ~ 9950 5400
+Wire Wire Line
+	9950 5400 9950 5500
+Wire Wire Line
+	9800 4750 9950 4750
+Connection ~ 9950 4750
+Wire Wire Line
+	9950 4750 9950 5200
+Wire Wire Line
+	8950 4550 9400 4550
+Wire Wire Line
+	8950 5200 9400 5200
+NoConn ~ 9400 4750
+NoConn ~ 9400 5400
+Text Label 8950 4550 0    50   ~ 0
+IOT_220
+Text Label 8950 5200 0    50   ~ 0
+IOT_219
 $EndSCHEMATC
