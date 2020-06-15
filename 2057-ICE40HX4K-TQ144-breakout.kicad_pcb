@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~84~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5+dfsg1-2build2)
 
   (general
     (thickness 1.6)
@@ -4236,10 +4236,10 @@
   (gr_text 49 (at 60.96 39.37 90) (layer F.SilkS) (tstamp 5E0F1606)
     (effects (font (size 1 0.762) (thickness 0.15)))
   )
-  (gr_text CDONE (at 69.215 77.47) (layer F.SilkS) (tstamp 5E0A8E0F)
+  (gr_text CDONE (at 69.215 74.93) (layer F.SilkS) (tstamp 5E0A8E0F)
     (effects (font (size 1 0.762) (thickness 0.15)) (justify left))
   )
-  (gr_text ~RESET~ (at 69.215 74.93) (layer F.SilkS) (tstamp 5E0A8E0F)
+  (gr_text ~RESET (at 69.215 77.47) (layer F.SilkS) (tstamp 5E0A8E0F)
     (effects (font (size 1 0.762) (thickness 0.15)) (justify left))
   )
   (gr_text SS (at 69.215 87.63) (layer F.SilkS) (tstamp 5E1C7A36)
