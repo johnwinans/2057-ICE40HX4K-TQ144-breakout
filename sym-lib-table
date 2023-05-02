@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name 2057-ICE40HX4K-TQ144-breakout-rescue)(type Legacy)(uri ${KIPRJMOD}/2057-ICE40HX4K-TQ144-breakout-rescue.lib)(options "")(descr ""))
+  (lib (name 2068-Z80-ICE40-rescue)(type Legacy)(uri ${KIPRJMOD}/2068-Z80-ICE40-rescue.lib)(options "")(descr ""))
 )
