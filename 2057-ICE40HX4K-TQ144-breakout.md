@@ -1,7 +1,7 @@
 
 # 2057-ICE40HX4K-TQ144-breakout.sch
 
-## Sun May 14 17:38:05 2023
+## Sun May 14 18:40:17 2023
 
 ## Eeschema 5.1.5+dfsg1-2build2
 
@@ -9,7 +9,7 @@
 
 Ref | Qty | Value | Digikey | Datasheet | Description
 ----|-----|-------|---------|-----------|------------
-C1, C2, C4, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C22, C23, C24 | 18 | .1uF |  | ~ | Unpolarized capacitor
+C1, C2, C4, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C22, C23, C24 | 18 | .1uF | 445-1314-1-ND | ~ | Unpolarized capacitor
 C3, C5 | 2 | 10uF | 1276-1119-1-ND | ~ | Unpolarized capacitor
 C18, C20 | 2 | 10uF | 1276-1119-1-ND | ~ | Unpolarized capacitor
 C19, C21, C27 | 3 | 22uF | 1276-2868-1-ND | ~ | Unpolarized capacitor, small symbol
