@@ -3613,23 +3613,6 @@ Wire Wire Line
 	5250 6650 5250 6950
 Connection ~ 5250 6950
 $Comp
-L JWlib:USB4105-GF-A J4
-U 1 1 64F6F1DF
-P 14650 4850
-F 0 "J4" H 14650 5885 50  0000 C CNN
-F 1 "USB4105-GF-A" H 14650 5794 50  0000 C CNN
-F 2 "jb-footprint:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 14850 5050 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/GCT%20PDFs/USB4105%20-%20Product%20Drawing.pdf" H 14850 5150 60  0001 L CNN
-F 4 "2073-USB4105-GF-ATR-ND" H 14850 5250 60  0001 L CNN "Digi-Key_PN"
-F 5 "USB4105-GF-A" H 14850 5350 60  0001 L CNN "MPN"
-F 6 "https://media.digikey.com/pdf/Data%20Sheets/GCT%20PDFs/USB4105%20-%20Product%20Drawing.pdf" H 14850 5650 60  0001 L CNN "DK_Datasheet_Link"
-F 7 "https://www.digikey.com/en/products/detail/gct/USB4105-GF-A/11198441" H 14850 5750 60  0001 L CNN "DK_Detail_Page"
-F 8 "USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole" H 14850 5850 60  0001 L CNN "Description"
-F 9 "GCT" H 14850 5950 60  0001 L CNN "Manufacturer"
-	1    14650 4850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 65271013
 P 14450 5850
@@ -3760,4 +3743,21 @@ Wire Wire Line
 	15600 4700 15650 4700
 Wire Wire Line
 	15650 4700 15650 4800
+$Comp
+L JWlib:USB4105-GF-A J4
+U 1 1 64858F3F
+P 14650 4850
+F 0 "J4" H 14650 5885 50  0000 C CNN
+F 1 "USB4105-GF-A" H 14650 5794 50  0000 C CNN
+F 2 "jb-footprint:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 14850 5050 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/GCT%20PDFs/USB4105%20-%20Product%20Drawing.pdf" H 14850 5150 60  0001 L CNN
+F 4 "2073-USB4105-GF-ATR-ND" H 14850 5250 60  0001 L CNN "Digi-Key_PN"
+F 5 "USB4105-GF-A" H 14850 5350 60  0001 L CNN "MPN"
+F 6 "https://media.digikey.com/pdf/Data%20Sheets/GCT%20PDFs/USB4105%20-%20Product%20Drawing.pdf" H 14850 5650 60  0001 L CNN "DK_Datasheet_Link"
+F 7 "https://www.digikey.com/en/products/detail/gct/USB4105-GF-A/11198441" H 14850 5750 60  0001 L CNN "DK_Detail_Page"
+F 8 "USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole" H 14850 5850 60  0001 L CNN "Description"
+F 9 "GCT" H 14850 5950 60  0001 L CNN "Manufacturer"
+	1    14650 4850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
