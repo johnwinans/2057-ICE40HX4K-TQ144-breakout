@@ -24,7 +24,7 @@ git show ${B_TAG}:${PROJECT}.pdf> ${B_TMP}/${PROJECT}.pdf || exit 1
 
 # Generate a .pdf showing the diffs in the schematic drawings
 
-compare ${A_TMP}/${PROJECT}.pdf ${B_TMP}/${PROJECT}.pdf ${OUT_NAME}-schematic.pdf
+compare -density 150 ${A_TMP}/${PROJECT}.pdf ${B_TMP}/${PROJECT}.pdf ${OUT_NAME}-schematic.pdf
 
 # Generate .png files showing the diffs between the A and B PCB versions
 
