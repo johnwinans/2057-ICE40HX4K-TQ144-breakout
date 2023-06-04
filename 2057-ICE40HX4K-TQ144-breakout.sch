@@ -5,8 +5,8 @@ $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "2057-ICE40HX4K-TQ144-breakout"
-Date "2023-05-13"
-Rev "2.1"
+Date "2023-06-04"
+Rev "3.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1626,21 +1626,21 @@ IOB_104
 $Comp
 L dk_Oscillators:XLH536025_000000I Y1
 U 1 1 5E47D397
-P 14600 4150
-F 0 "Y1" H 14850 3900 60  0000 L CNN
-F 1 "XLH536025_000000I" H 14850 3800 60  0000 L CNN
-F 2 "jb-footprint:Oscillator_XLH536025.000000I" H 14800 4350 60  0001 L CNN
-F 3 "https://www.idt.com/document/dst/xl-family-low-phase-noise-quartz-based-pll-oscillators-datasheet" H 14800 4450 60  0001 L CNN
-F 4 "631-1156-1-ND" H 14800 4550 60  0001 L CNN "Digi-Key_PN"
-F 5 "XLH536025.000000I" H 14800 4650 60  0001 L CNN "MPN"
-F 6 "Crystals, Oscillators, Resonators" H 14800 4750 60  0001 L CNN "Category"
-F 7 "Oscillators" H 14800 4850 60  0001 L CNN "Family"
-F 8 "https://www.idt.com/document/dst/xl-family-low-phase-noise-quartz-based-pll-oscillators-datasheet" H 14800 4950 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/idt-integrated-device-technology-inc/XLH536025.000000I/631-1156-1-ND/2074684" H 14800 5050 60  0001 L CNN "DK_Detail_Page"
-F 10 "XTAL OSC XO 25.0000MHZ HCMOS SMD" H 14800 5150 60  0001 L CNN "Description"
-F 11 "IDT, Integrated Device Technology Inc" H 14800 5250 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 14800 5350 60  0001 L CNN "Status"
-	1    14600 4150
+P 13000 3050
+F 0 "Y1" H 13250 2800 60  0000 L CNN
+F 1 "XLH536025_000000I" H 13250 2700 60  0000 L CNN
+F 2 "jb-footprint:Oscillator_XLH536025.000000I" H 13200 3250 60  0001 L CNN
+F 3 "https://www.idt.com/document/dst/xl-family-low-phase-noise-quartz-based-pll-oscillators-datasheet" H 13200 3350 60  0001 L CNN
+F 4 "631-1156-1-ND" H 13200 3450 60  0001 L CNN "Digi-Key_PN"
+F 5 "XLH536025.000000I" H 13200 3550 60  0001 L CNN "MPN"
+F 6 "Crystals, Oscillators, Resonators" H 13200 3650 60  0001 L CNN "Category"
+F 7 "Oscillators" H 13200 3750 60  0001 L CNN "Family"
+F 8 "https://www.idt.com/document/dst/xl-family-low-phase-noise-quartz-based-pll-oscillators-datasheet" H 13200 3850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/idt-integrated-device-technology-inc/XLH536025.000000I/631-1156-1-ND/2074684" H 13200 3950 60  0001 L CNN "DK_Detail_Page"
+F 10 "XTAL OSC XO 25.0000MHZ HCMOS SMD" H 13200 4050 60  0001 L CNN "Description"
+F 11 "IDT, Integrated Device Technology Inc" H 13200 4150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13200 4250 60  0001 L CNN "Status"
+	1    13000 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1664,26 +1664,6 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_2x30_P2.54mm_Vertical" H 3900 8500 50 
 F 3 "~" H 3900 8500 50  0001 C CNN
 	1    3900 8500
 	1    0    0    -1  
-$EndComp
-$Comp
-L dk_USB-DVI-HDMI-Connectors:0548190519 J4
-U 1 1 5E547F6B
-P 14650 5900
-F 0 "J4" H 14675 6552 60  0000 C CNN
-F 1 "0548190519" H 14675 6446 60  0000 C CNN
-F 2 "digikey-footprints:USB_Mini_B_Female_548190519" H 14850 6100 60  0001 L CNN
-F 3 "https://www.molex.com/pdm_docs/sd/548190519_sd.pdf" H 14850 6200 60  0001 L CNN
-F 4 "WM17115-ND" H 14850 6300 60  0001 L CNN "Digi-Key_PN"
-F 5 "0548190519" H 14850 6400 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 14850 6500 60  0001 L CNN "Category"
-F 7 "USB, DVI, HDMI Connectors" H 14850 6600 60  0001 L CNN "Family"
-F 8 "https://www.molex.com/pdm_docs/sd/548190519_sd.pdf" H 14850 6700 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/molex/0548190519/WM17115-ND/773802" H 14850 6800 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN RCPT USB2.0 MINI B 5P R/A" H 14850 6900 60  0001 L CNN "Description"
-F 11 "Molex" H 14850 7000 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 14850 7100 60  0001 L CNN "Status"
-	1    14650 5900
-	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8200 8100 8350 8100
@@ -1769,57 +1749,6 @@ Connection ~ 13950 1800
 Wire Wire Line
 	13950 1800 14250 1800
 Wire Wire Line
-	14950 6100 15150 6100
-Wire Wire Line
-	15150 6100 15150 6250
-Wire Wire Line
-	14950 5700 15150 5700
-Wire Wire Line
-	15150 5700 15150 5650
-$Comp
-L power:+5V #PWR019
-U 1 1 5E7FADC3
-P 15150 5650
-F 0 "#PWR019" H 15150 5500 50  0001 C CNN
-F 1 "+5V" H 15165 5823 50  0000 C CNN
-F 2 "" H 15150 5650 50  0001 C CNN
-F 3 "" H 15150 5650 50  0001 C CNN
-	1    15150 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E7FB3A6
-P 15150 6250
-AR Path="/5D1A4D20/5E7FB3A6" Ref="#PWR?"  Part="1" 
-AR Path="/5E7FB3A6" Ref="#PWR021"  Part="1" 
-AR Path="/5CF9559A/5E7FB3A6" Ref="#PWR?"  Part="1" 
-AR Path="/5E2D04E3/5E7FB3A6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR021" H 15150 6000 50  0001 C CNN
-F 1 "GND" H 15155 6077 50  0000 C CNN
-F 2 "" H 15150 6250 50  0001 C CNN
-F 3 "" H 15150 6250 50  0001 C CNN
-	1    15150 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E7FBA04
-P 14250 5400
-AR Path="/5D1A4D20/5E7FBA04" Ref="#PWR?"  Part="1" 
-AR Path="/5E7FBA04" Ref="#PWR018"  Part="1" 
-AR Path="/5CF9559A/5E7FBA04" Ref="#PWR?"  Part="1" 
-AR Path="/5E2D04E3/5E7FBA04" Ref="#PWR?"  Part="1" 
-F 0 "#PWR018" H 14250 5150 50  0001 C CNN
-F 1 "GND" H 14255 5227 50  0000 C CNN
-F 2 "" H 14250 5400 50  0001 C CNN
-F 3 "" H 14250 5400 50  0001 C CNN
-	1    14250 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14250 5400 14450 5400
-Wire Wire Line
 	13800 1800 13800 2650
 Wire Wire Line
 	13800 1800 13950 1800
@@ -1862,40 +1791,40 @@ Connection ~ 1800 5150
 $Comp
 L power:GND #PWR?
 U 1 1 5E8EFAA7
-P 14600 4600
+P 13000 3500
 AR Path="/5D1A4D20/5E8EFAA7" Ref="#PWR?"  Part="1" 
 AR Path="/5E8EFAA7" Ref="#PWR0104"  Part="1" 
 AR Path="/5CF9559A/5E8EFAA7" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D04E3/5E8EFAA7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0104" H 14600 4350 50  0001 C CNN
-F 1 "GND" H 14605 4427 50  0000 C CNN
-F 2 "" H 14600 4600 50  0001 C CNN
-F 3 "" H 14600 4600 50  0001 C CNN
-	1    14600 4600
+F 0 "#PWR0104" H 13000 3250 50  0001 C CNN
+F 1 "GND" H 13005 3327 50  0000 C CNN
+F 2 "" H 13000 3500 50  0001 C CNN
+F 3 "" H 13000 3500 50  0001 C CNN
+	1    13000 3500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E8F02B2
-P 14700 3900
+P 13100 2800
 AR Path="/5D1A4D20/5E8F02B2" Ref="#PWR?"  Part="1" 
 AR Path="/5E8F02B2" Ref="#PWR0105"  Part="1" 
 AR Path="/5CF9559A/5E8F02B2" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D04E3/5E8F02B2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0105" H 14700 3750 50  0001 C CNN
-F 1 "+3.3V" H 14715 4073 50  0000 C CNN
-F 2 "" H 14700 3900 50  0001 C CNN
-F 3 "" H 14700 3900 50  0001 C CNN
-	1    14700 3900
+F 0 "#PWR0105" H 13100 2650 50  0001 C CNN
+F 1 "+3.3V" H 13115 2973 50  0000 C CNN
+F 2 "" H 13100 2800 50  0001 C CNN
+F 3 "" H 13100 2800 50  0001 C CNN
+	1    13100 2800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 14400 4250
+NoConn ~ 12800 3150
 Wire Wire Line
-	14600 4550 14600 4600
+	13000 3450 13000 3500
 Wire Wire Line
-	14700 3900 14700 3950
+	13100 2800 13100 2850
 Wire Wire Line
-	14900 4250 15250 4250
+	13300 3150 13650 3150
 Wire Wire Line
 	8200 9200 8800 9200
 Wire Wire Line
@@ -1904,7 +1833,7 @@ Wire Wire Line
 	6550 9100 7200 9100
 Wire Wire Line
 	6550 9000 7200 9000
-Text Label 15250 4250 2    50   ~ 0
+Text Label 13650 3150 2    50   ~ 0
 IOB_82
 $Comp
 L Device:C C23
@@ -2530,10 +2459,7 @@ F 3 "~" H 16250 9600 50  0001 C CNN
 $EndComp
 Text Notes 14350 9250 0    39   ~ 8
 https://github.com/johnwinans/2057-ICE40HX4K-TQ144-breakout
-NoConn ~ 14950 5800
-NoConn ~ 14950 5900
-NoConn ~ 14950 6000
-Text Notes 14250 6650 0    79   ~ 16
+Text Notes 14150 6200 0    79   ~ 16
 USB Power Only
 Text Notes 13850 7350 0    79   ~ 16
 Insert J7 to power\nFPGA from PI
@@ -2647,63 +2573,63 @@ Wire Wire Line
 $Comp
 L Device:LED_ALT D2
 U 1 1 5E50F729
-P 14500 3500
-F 0 "D2" H 14493 3625 50  0000 C CNN
-F 1 "LED_ALT" H 14493 3625 50  0001 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 14500 3500 50  0001 C CNN
-F 3 "~" H 14500 3500 50  0001 C CNN
-F 4 "Green LED" H 14500 3500 50  0001 C CNN "Description"
-F 5 "B1911PG--20D000514U1930" H 14500 3500 50  0001 C CNN "Digi-Key_PN"
-F 6 "B1911PG--20D000514U1930" H 14500 3500 50  0001 C CNN "MPN"
-F 7 "Harvatek Corporation" H 14500 3500 50  0001 C CNN "Manufacturer"
-	1    14500 3500
+P 14250 1000
+F 0 "D2" H 14243 1125 50  0000 C CNN
+F 1 "LED_ALT" H 14243 1125 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 14250 1000 50  0001 C CNN
+F 3 "~" H 14250 1000 50  0001 C CNN
+F 4 "Green LED" H 14250 1000 50  0001 C CNN "Description"
+F 5 "B1911PG--20D000514U1930" H 14250 1000 50  0001 C CNN "Digi-Key_PN"
+F 6 "B1911PG--20D000514U1930" H 14250 1000 50  0001 C CNN "MPN"
+F 7 "Harvatek Corporation" H 14250 1000 50  0001 C CNN "Manufacturer"
+	1    14250 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R6
 U 1 1 5E50FD46
-P 14850 3500
-F 0 "R6" V 14750 3500 50  0000 C CNN
-F 1 "330" V 14850 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 14780 3500 50  0001 C CNN
-F 3 "~" H 14850 3500 50  0001 C CNN
-	1    14850 3500
+P 14600 1000
+F 0 "R6" V 14500 1000 50  0000 C CNN
+F 1 "330" V 14600 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 14530 1000 50  0001 C CNN
+F 3 "~" H 14600 1000 50  0001 C CNN
+	1    14600 1000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	14650 3500 14700 3500
+	14400 1000 14450 1000
 Wire Wire Line
-	14350 3500 14200 3500
+	14100 1000 13950 1000
 Wire Wire Line
-	15000 3500 15150 3500
+	14750 1000 14900 1000
 $Comp
 L power:GND #PWR?
 U 1 1 5E622C56
-P 14200 3500
+P 13950 1000
 AR Path="/5D1A4D20/5E622C56" Ref="#PWR?"  Part="1" 
 AR Path="/5E622C56" Ref="#PWR0119"  Part="1" 
 AR Path="/5CF9559A/5E622C56" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D04E3/5E622C56" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0119" H 14200 3250 50  0001 C CNN
-F 1 "GND" H 14205 3327 50  0000 C CNN
-F 2 "" H 14200 3500 50  0001 C CNN
-F 3 "" H 14200 3500 50  0001 C CNN
-	1    14200 3500
+F 0 "#PWR0119" H 13950 750 50  0001 C CNN
+F 1 "GND" H 13955 827 50  0000 C CNN
+F 2 "" H 13950 1000 50  0001 C CNN
+F 3 "" H 13950 1000 50  0001 C CNN
+	1    13950 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E6230C3
-P 15150 3500
+P 14900 1000
 AR Path="/5D1A4D20/5E6230C3" Ref="#PWR?"  Part="1" 
 AR Path="/5E6230C3" Ref="#PWR0120"  Part="1" 
 AR Path="/5CF9559A/5E6230C3" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D04E3/5E6230C3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0120" H 15150 3350 50  0001 C CNN
-F 1 "+3.3V" H 15165 3673 50  0000 C CNN
-F 2 "" H 15150 3500 50  0001 C CNN
-F 3 "" H 15150 3500 50  0001 C CNN
-	1    15150 3500
+F 0 "#PWR0120" H 14900 850 50  0001 C CNN
+F 1 "+3.3V" H 14915 1173 50  0000 C CNN
+F 2 "" H 14900 1000 50  0001 C CNN
+F 3 "" H 14900 1000 50  0001 C CNN
+	1    14900 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3139,9 +3065,9 @@ Wire Wire Line
 NoConn ~ 9500 4850
 NoConn ~ 9500 5500
 Text Label 9050 4650 0    50   ~ 0
-IOT_220
+IOR_161
 Text Label 9050 5300 0    50   ~ 0
-IOT_219
+IOR_165
 $Comp
 L JWlib:AT45DB161D-SU U4
 U 1 1 60D98DA0
@@ -3493,9 +3419,9 @@ $EndComp
 NoConn ~ 6200 6050
 NoConn ~ 6200 6750
 Wire Wire Line
-	6200 6950 5750 6950
+	6200 6850 5750 6850
 Wire Wire Line
-	6200 6850 5250 6850
+	6200 6950 5250 6950
 Wire Wire Line
 	6200 6450 5750 6450
 Wire Wire Line
@@ -3503,9 +3429,9 @@ Wire Wire Line
 Wire Wire Line
 	6200 6150 5750 6150
 Text Label 5750 6150 0    50   ~ 0
-IOT_206
+IOT_174
 Text Label 5750 6250 0    50   ~ 0
-IOT_213
+IOT_178
 $Comp
 L power:GND #PWR017
 U 1 1 64D80C35
@@ -3554,12 +3480,9 @@ F 3 "" H 5250 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5750 6650 0    50   ~ 0
-IOT_217
+IOT_181
 Wire Wire Line
 	5750 6650 6200 6650
-Connection ~ 5250 6850
-Wire Wire Line
-	5250 6850 5250 6950
 $Comp
 L power:GND #PWR026
 U 1 1 65224878
@@ -3576,39 +3499,39 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 652AB0EA
-P 13350 5850
+P 2500 6100
 AR Path="/5D1A4D20/652AB0EA" Ref="#PWR?"  Part="1" 
 AR Path="/652AB0EA" Ref="#PWR025"  Part="1" 
 AR Path="/5CF9559A/652AB0EA" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D04E3/652AB0EA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR025" H 13350 5600 50  0001 C CNN
-F 1 "GND" H 13355 5677 50  0000 C CNN
-F 2 "" H 13350 5850 50  0001 C CNN
-F 3 "" H 13350 5850 50  0001 C CNN
-	1    13350 5850
+F 0 "#PWR025" H 2500 5850 50  0001 C CNN
+F 1 "GND" H 2505 5927 50  0000 C CNN
+F 2 "" H 2500 6100 50  0001 C CNN
+F 3 "" H 2500 6100 50  0001 C CNN
+	1    2500 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 652AB9E5
-P 12650 5850
+P 1800 6100
 AR Path="/5D1A4D20/652AB9E5" Ref="#PWR?"  Part="1" 
 AR Path="/652AB9E5" Ref="#PWR024"  Part="1" 
 AR Path="/5CF9559A/652AB9E5" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D04E3/652AB9E5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR024" H 12650 5600 50  0001 C CNN
-F 1 "GND" H 12655 5677 50  0000 C CNN
-F 2 "" H 12650 5850 50  0001 C CNN
-F 3 "" H 12650 5850 50  0001 C CNN
-	1    12650 5850
+F 0 "#PWR024" H 1800 5850 50  0001 C CNN
+F 1 "GND" H 1805 5927 50  0000 C CNN
+F 2 "" H 1800 6100 50  0001 C CNN
+F 3 "" H 1800 6100 50  0001 C CNN
+	1    1800 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12650 5800 12650 5850
+	1800 6050 1800 6100
 Wire Wire Line
-	13350 5800 13350 5850
+	2500 6050 2500 6100
 Text Label 5750 6450 0    50   ~ 0
-IOT_215
+IOT_191
 Text Notes 5500 6650 0    50   ~ 0
 MISO
 Text Notes 5500 6450 0    50   ~ 0
@@ -3617,48 +3540,48 @@ Text Notes 5500 6250 0    50   ~ 0
 MOSI
 Text Notes 5500 6150 0    50   ~ 0
 SSEL
-Text Notes 5500 6950 0    50   ~ 0
+Text Notes 5500 6850 0    50   ~ 0
 DET
-Text Label 5750 6950 0    50   ~ 0
-IOT_220
+Text Label 5750 6850 0    50   ~ 0
+IOT_192
 $Comp
 L dk_Test-Points:RCW-0C TP1
 U 1 1 6464BEE2
-P 12650 5700
-F 0 "TP1" H 12562 5701 50  0000 R CNN
-F 1 "RCW-0C" H 12562 5792 50  0000 R CNN
-F 2 "digikey-footprints:PROBE_PAD_1206" H 12850 5900 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773266&DocType=DS&DocLang=English" H 12850 6000 60  0001 L CNN
-F 4 "A106146CT-ND" H 12850 6100 60  0001 L CNN "Digi-Key_PN"
-F 5 "RCW-0C" H 12850 6200 60  0001 L CNN "MPN"
-F 6 "Test and Measurement" H 12850 6300 60  0001 L CNN "Category"
-F 7 "Test Points" H 12850 6400 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773266&DocType=DS&DocLang=English" H 12850 6500 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803" H 12850 6600 60  0001 L CNN "DK_Detail_Page"
-F 10 "PC TEST POINT NATURAL" H 12850 6700 60  0001 L CNN "Description"
-F 11 "TE Connectivity AMP Connectors" H 12850 6800 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 12850 6900 60  0001 L CNN "Status"
-	1    12650 5700
+P 1800 5950
+F 0 "TP1" H 1712 5951 50  0000 R CNN
+F 1 "RCW-0C" H 1712 6042 50  0000 R CNN
+F 2 "digikey-footprints:PROBE_PAD_1206" H 2000 6150 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773266&DocType=DS&DocLang=English" H 2000 6250 60  0001 L CNN
+F 4 "A106146CT-ND" H 2000 6350 60  0001 L CNN "Digi-Key_PN"
+F 5 "RCW-0C" H 2000 6450 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 2000 6550 60  0001 L CNN "Category"
+F 7 "Test Points" H 2000 6650 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773266&DocType=DS&DocLang=English" H 2000 6750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803" H 2000 6850 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT NATURAL" H 2000 6950 60  0001 L CNN "Description"
+F 11 "TE Connectivity AMP Connectors" H 2000 7050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2000 7150 60  0001 L CNN "Status"
+	1    1800 5950
 	-1   0    0    1   
 $EndComp
 $Comp
 L dk_Test-Points:RCW-0C TP2
 U 1 1 6482A1E3
-P 13350 5700
-F 0 "TP2" H 13262 5701 50  0000 R CNN
-F 1 "RCW-0C" H 13262 5792 50  0000 R CNN
-F 2 "digikey-footprints:PROBE_PAD_1206" H 13550 5900 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773266&DocType=DS&DocLang=English" H 13550 6000 60  0001 L CNN
-F 4 "A106146CT-ND" H 13550 6100 60  0001 L CNN "Digi-Key_PN"
-F 5 "RCW-0C" H 13550 6200 60  0001 L CNN "MPN"
-F 6 "Test and Measurement" H 13550 6300 60  0001 L CNN "Category"
-F 7 "Test Points" H 13550 6400 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773266&DocType=DS&DocLang=English" H 13550 6500 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803" H 13550 6600 60  0001 L CNN "DK_Detail_Page"
-F 10 "PC TEST POINT NATURAL" H 13550 6700 60  0001 L CNN "Description"
-F 11 "TE Connectivity AMP Connectors" H 13550 6800 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 13550 6900 60  0001 L CNN "Status"
-	1    13350 5700
+P 2500 5950
+F 0 "TP2" H 2412 5951 50  0000 R CNN
+F 1 "RCW-0C" H 2412 6042 50  0000 R CNN
+F 2 "digikey-footprints:PROBE_PAD_1206" H 2700 6150 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773266&DocType=DS&DocLang=English" H 2700 6250 60  0001 L CNN
+F 4 "A106146CT-ND" H 2700 6350 60  0001 L CNN "Digi-Key_PN"
+F 5 "RCW-0C" H 2700 6450 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 2700 6550 60  0001 L CNN "Category"
+F 7 "Test Points" H 2700 6650 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773266&DocType=DS&DocLang=English" H 2700 6750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803" H 2700 6850 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT NATURAL" H 2700 6950 60  0001 L CNN "Description"
+F 11 "TE Connectivity AMP Connectors" H 2700 7050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2700 7150 60  0001 L CNN "Status"
+	1    2500 5950
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -3687,5 +3610,154 @@ Wire Wire Line
 	4900 6650 5250 6650
 Connection ~ 5250 6650
 Wire Wire Line
-	5250 6650 5250 6850
+	5250 6650 5250 6950
+Connection ~ 5250 6950
+$Comp
+L JWlib:USB4105-GF-A J4
+U 1 1 64F6F1DF
+P 14650 4850
+F 0 "J4" H 14650 5885 50  0000 C CNN
+F 1 "USB4105-GF-A" H 14650 5794 50  0000 C CNN
+F 2 "jb-footprint:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 14850 5050 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/GCT%20PDFs/USB4105%20-%20Product%20Drawing.pdf" H 14850 5150 60  0001 L CNN
+F 4 "2073-USB4105-GF-ATR-ND" H 14850 5250 60  0001 L CNN "Digi-Key_PN"
+F 5 "USB4105-GF-A" H 14850 5350 60  0001 L CNN "MPN"
+F 6 "https://media.digikey.com/pdf/Data%20Sheets/GCT%20PDFs/USB4105%20-%20Product%20Drawing.pdf" H 14850 5650 60  0001 L CNN "DK_Datasheet_Link"
+F 7 "https://www.digikey.com/en/products/detail/gct/USB4105-GF-A/11198441" H 14850 5750 60  0001 L CNN "DK_Detail_Page"
+F 8 "USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole" H 14850 5850 60  0001 L CNN "Description"
+F 9 "GCT" H 14850 5950 60  0001 L CNN "Manufacturer"
+	1    14650 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 65271013
+P 14450 5850
+AR Path="/5D1A4D20/65271013" Ref="#PWR?"  Part="1" 
+AR Path="/65271013" Ref="#PWR028"  Part="1" 
+AR Path="/5CF9559A/65271013" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D04E3/65271013" Ref="#PWR?"  Part="1" 
+F 0 "#PWR028" H 14450 5600 50  0001 C CNN
+F 1 "GND" H 14455 5677 50  0000 C CNN
+F 2 "" H 14450 5850 50  0001 C CNN
+F 3 "" H 14450 5850 50  0001 C CNN
+	1    14450 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 5800 14450 5850
+NoConn ~ 15150 4900
+NoConn ~ 15150 4800
+NoConn ~ 14150 4800
+NoConn ~ 14150 4900
+Wire Wire Line
+	14150 5400 14050 5400
+Wire Wire Line
+	14050 5400 14050 5450
+$Comp
+L power:GND #PWR?
+U 1 1 65538C6D
+P 14050 5450
+AR Path="/5D1A4D20/65538C6D" Ref="#PWR?"  Part="1" 
+AR Path="/65538C6D" Ref="#PWR027"  Part="1" 
+AR Path="/5CF9559A/65538C6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D04E3/65538C6D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR027" H 14050 5200 50  0001 C CNN
+F 1 "GND" H 14055 5277 50  0000 C CNN
+F 2 "" H 14050 5450 50  0001 C CNN
+F 3 "" H 14050 5450 50  0001 C CNN
+	1    14050 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 4500 13800 4500
+Wire Wire Line
+	14150 5250 13800 5250
+Wire Wire Line
+	13800 5250 13800 4500
+Wire Wire Line
+	13800 4500 13800 4450
+$Comp
+L power:+5V #PWR018
+U 1 1 65828D74
+P 13800 4450
+F 0 "#PWR018" H 13800 4300 50  0001 C CNN
+F 1 "+5V" H 13815 4623 50  0000 C CNN
+F 2 "" H 13800 4450 50  0001 C CNN
+F 3 "" H 13800 4450 50  0001 C CNN
+	1    13800 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 13800 4500
+Wire Wire Line
+	14150 4300 14050 4300
+NoConn ~ 14150 4700
+NoConn ~ 15150 5000
+Wire Wire Line
+	14050 4300 14050 5400
+Connection ~ 14050 5400
+$Comp
+L Device:R R17
+U 1 1 65C148C9
+P 15450 4700
+F 0 "R17" V 15350 4700 50  0000 C CNN
+F 1 "5.1K" V 15450 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 15380 4700 50  0001 C CNN
+F 3 "~" H 15450 4700 50  0001 C CNN
+	1    15450 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 65C181BC
+P 13500 5000
+F 0 "R18" V 13400 5000 50  0000 C CNN
+F 1 "5.1K" V 13500 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13430 5000 50  0001 C CNN
+F 3 "~" H 13500 5000 50  0001 C CNN
+	1    13500 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 5000 14150 5000
+Wire Wire Line
+	13350 5000 13250 5000
+Wire Wire Line
+	13250 5000 13250 5150
+$Comp
+L power:GND #PWR?
+U 1 1 65D0A6FB
+P 13250 5150
+AR Path="/5D1A4D20/65D0A6FB" Ref="#PWR?"  Part="1" 
+AR Path="/65D0A6FB" Ref="#PWR021"  Part="1" 
+AR Path="/5CF9559A/65D0A6FB" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D04E3/65D0A6FB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR021" H 13250 4900 50  0001 C CNN
+F 1 "GND" H 13255 4977 50  0000 C CNN
+F 2 "" H 13250 5150 50  0001 C CNN
+F 3 "" H 13250 5150 50  0001 C CNN
+	1    13250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 65D0AC8A
+P 15650 4800
+AR Path="/5D1A4D20/65D0AC8A" Ref="#PWR?"  Part="1" 
+AR Path="/65D0AC8A" Ref="#PWR019"  Part="1" 
+AR Path="/5CF9559A/65D0AC8A" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D04E3/65D0AC8A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR019" H 15650 4550 50  0001 C CNN
+F 1 "GND" H 15655 4627 50  0000 C CNN
+F 2 "" H 15650 4800 50  0001 C CNN
+F 3 "" H 15650 4800 50  0001 C CNN
+	1    15650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15150 4700 15300 4700
+Wire Wire Line
+	15600 4700 15650 4700
+Wire Wire Line
+	15650 4700 15650 4800
 $EndSCHEMATC
