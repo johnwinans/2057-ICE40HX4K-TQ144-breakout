@@ -1,0 +1,32 @@
+.PHONY: clean world
+
+%.blif : %.v
+	yosys -p "synth_ice40 -top top -blif $@" $<
+
+%.json : %.v
+	yosys -p "synth_ice40 -top top -blif $@" $<
+
+# Use nextpnr-ice40 to build from a JSON file
+#%.asc : %.json
+#	nextpnr-ice40 --hx$(DEVICE) --package $(FOOTPRINT) --pcf pinmap.pcf --asc $@ --json $<
+
+# Use arachne-pnr to build from a BLIF file 
+%.asc : %.blif
+	arachne-pnr -d $(DEVICE) --package $(FOOTPRINT) -p pinmap.pcf -o $@ $< 
+
+%.bin : %.asc
+	icepack $< $@
+
+timings: top.asc
+	icetime -tmd hx$(DEVICE) $<
+
+tb.vvp: tb.v top.v
+	iverilog -o $@ $^
+
+%.vcd: %.vvp
+	vvp $<
+
+clean::
+	rm -f *.bin *.vvp *.vcd *.asc
+
+world:: clean all

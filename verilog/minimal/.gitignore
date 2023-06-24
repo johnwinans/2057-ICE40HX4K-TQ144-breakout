@@ -1,0 +1,5 @@
+*.o
+*.vcd
+ice_dir
+obj_dir
+log
