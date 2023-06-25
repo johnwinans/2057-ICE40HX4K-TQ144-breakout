@@ -10,7 +10,7 @@ module tb();
 		);
 
 	initial begin
-		$dumpfile("tb.vcd");		// where to write the dump
+		$dumpfile("top_tb.vcd");	// where to write the dump
 		$dumpvars;					// dump EVERYTHING
 		clk = 0;
 	end

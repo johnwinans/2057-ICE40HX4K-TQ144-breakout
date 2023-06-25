@@ -5,8 +5,9 @@ FOOTPRINT = tq144:4k
 
 .PHONY: all clean burn world timings
 
-FILES=\
-	top.v
+FILES= \
+	top.v \
+	counter.v
 
 all:: top.bin
 
@@ -20,11 +21,12 @@ timing: top.asc
 	icetime -tmd hx$(DEVICE) $<
 
 
-top_tb.vvp: top_tb.v $(FILES)
+counter_tb.vvp: counter_tb.v counter.v
 	iverilog -o $@ $^
 
-plot: top_tb.vcd
+plot: counter_tb.vcd
 	gtkwave $<
 
 prog: top.bin
 	sudo $(TOP)/prog-flash.sh $<
+

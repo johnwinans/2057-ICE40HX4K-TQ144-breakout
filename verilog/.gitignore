@@ -1,0 +1,7 @@
+*.swp
+*.asc
+*.bin
+*.blif
+*.json
+*.vcd
+*.vvp

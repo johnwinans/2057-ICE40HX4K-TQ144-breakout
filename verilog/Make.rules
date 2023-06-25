@@ -1,32 +1,98 @@
-.PHONY: clean world
+#    Copyright (C) 2023  John Winans
+#
+#    This library is free software; you can redistribute it and/or
+#    modify it under the terms of the GNU Lesser General Public
+#    License as published by the Free Software Foundation; either
+#    version 2.1 of the License, or (at your option) any later version.
+#
+#    This library is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#    Lesser General Public License for more details.
+#
+#    You should have received a copy of the GNU Lesser General Public
+#    License along with this library; if not, write to the Free Software
+#    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
+#    USA
 
+
+# Make sure the all rule is seen first to make it the default target
+all::
+
+
+###################################################################
+# Rules to walk the filesystem tree
+###################################################################
+
+CLEAN_DIRS=$(SUBDIRS:%=clean-%)
+ALL_DIRS=$(SUBDIRS:%=all-%)
+DOXY_DIRS=$(SUBDIRS:%=doxy-%)
+
+.PHONY: all clean world doc timing $(CLEAN_DIRS) $(ALL_DIRS) $(DOXY_DIRS)
+
+all:: $(ALL_DIRS)
+
+clean:: $(CLEAN_DIRS)
+
+doc:: $(DOXY_DIRS)
+	if [ -f Doxyfile ]; then doxygen Doxyfile; fi
+world:: clean all
+
+
+# for each dir, do a make all
+$(ALL_DIRS):
+	$(MAKE) -C $(@:all-%=%) all
+
+# for each dir, do a make clean
+$(CLEAN_DIRS):
+	$(MAKE) -C $(@:clean-%=%) clean
+
+# for each dir, do a make doc
+$(DOXY_DIRS):
+	$(MAKE) -C $(@:doxy-%=%) doc
+
+
+
+###################################################################
+# Rules that know how to build and simulate Verilog apps 
+###################################################################
+
+COMPILE.v	?= yosys
+NEXTPNR 	?= nextpnr-ice40
+ARACHNE		?= arachne-pnr
+DEVICE		?= 8k
+FOOTPRINT	?= tq144:4k
+PINMAP 		?= pinmap.pcf
+
+# useful for single-file builds
 %.blif : %.v
-	yosys -p "synth_ice40 -top top -blif $@" $<
+	$(COMPILE.v) -p "synth_ice40 -top top -blif $@" $<
 
+# useful for single-file builds
 %.json : %.v
-	yosys -p "synth_ice40 -top top -blif $@" $<
+	$(COMPILE.v) -p "synth_ice40 -top top -json $@" $<
+
 
 # Use nextpnr-ice40 to build from a JSON file
 #%.asc : %.json
-#	nextpnr-ice40 --hx$(DEVICE) --package $(FOOTPRINT) --pcf pinmap.pcf --asc $@ --json $<
+#	$(NEXTPNR) --hx$(DEVICE) --package $(FOOTPRINT) --pcf $(PINMAP) --asc $@ --json $<
 
 # Use arachne-pnr to build from a BLIF file 
 %.asc : %.blif
-	arachne-pnr -d $(DEVICE) --package $(FOOTPRINT) -p pinmap.pcf -o $@ $< 
+	$(ARACHNE) -d $(DEVICE) --package $(FOOTPRINT) -p $(PINMAP) -o $@ $< 
 
+
+# make a binary config file from an ASC file
 %.bin : %.asc
 	icepack $< $@
-
-timings: top.asc
-	icetime -tmd hx$(DEVICE) $<
-
-tb.vvp: tb.v top.v
-	iverilog -o $@ $^
 
 %.vcd: %.vvp
 	vvp $<
 
+
+
+
 clean::
-	rm -f *.bin *.vvp *.vcd *.asc
+	rm -f *.bin *.vvp *.vcd *.asc *.blif *.json
 
 world:: clean all
