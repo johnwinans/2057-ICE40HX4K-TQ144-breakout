@@ -2,7 +2,7 @@
 
 These instructions have been verified on:
 - Ubuntu 20.04.2 LTS 2023-06-24
-- XXX 
+- Raspbian GNU/Linux 11 (bullseye) 2023-06-24
 
 # Install the tools
 
@@ -11,10 +11,12 @@ These instructions have been verified on:
 	sudo apt install iverilog
 	sudo apt install gtkwave
 
-Note that on newer systems, the following is preferred over `arachne-pnr`.  However, it 
+Note that on newer systems, the following may be preferred over `arachne-pnr`.  However, it 
 may not be in the standard set of available packages.
 
 	sudo apt install nextpnr-ice40
+
+The make files in this project are configured to use arachne-pnr because, at the time of testing, nextpnr-ice40 was not a standard package on th Raspberry PI (that was used as the FLASH programmer.)
 
 # To run these applications on the `2057-ICE40HX4K-TQ144-breakout`
 
