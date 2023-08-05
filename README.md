@@ -6,6 +6,8 @@ All features except for the SD card have been tested and are working properly. (
 
 Example test programs can be found in the [verilog](./verilog) directory.
 
+The BOM (Bill Of Materials) can be found in [2057-ICE40HX4K-TQ144-breakout.md](./2057-ICE40HX4K-TQ144-breakout.md).
+
 ![PCB Image](2057-ICE40HX4K-TQ144-breakout.jpg)
 
 ![PCB Image](2057-ICE40HX4K-TQ144-breakout-back.jpg)
