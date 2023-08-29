@@ -30,6 +30,18 @@ module top (
     output wire led1		// a single-bit output signal called led1
 	);
 
-	assign led1 = btn1;		// connect the btn1 input to the led1 output
+
+    // Configure the button with the internal pullup.
+    // Floating inputs are very confusing.
+    wire button;
+    SB_IO #(
+        .PIN_TYPE(6'b 0000_01),
+        .PULLUP(1'b 1)
+    ) button_input(
+        .PACKAGE_PIN(btn1),
+        .D_IN_0(button)
+    );
+
+	assign led1 = button;		// connect the internal button input to the led1 output
 
 endmodule
