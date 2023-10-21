@@ -8,10 +8,16 @@ Example test programs can be found in the [verilog](./verilog) directory.
 
 The BOM (Bill Of Materials) can be found in [2057-ICE40HX4K-TQ144-breakout.md](./2057-ICE40HX4K-TQ144-breakout.md).
 
+## See The Following Repos For Installing Development Tools and Example Code
+
+- [Raspberry PI Setup](https://github.com/johnwinans/raspberry-pi-install)
+- [Icarus Setup & Example Programs](https://github.com/johnwinans/IceStick-Examples-Icarus) (For simulation and debugging)
+- [More Example Programs](https://github.com/johnwinans/Verilog-Examples) (More example programs)
+
+
 ![PCB Image](2057-ICE40HX4K-TQ144-breakout.jpg)
 
 ![PCB Image](2057-ICE40HX4K-TQ144-breakout-back.jpg)
-
 
 # iCE40 Docs
 
