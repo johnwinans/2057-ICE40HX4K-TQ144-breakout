@@ -10,6 +10,7 @@ The BOM (Bill Of Materials) can be found in [2057-ICE40HX4K-TQ144-breakout.md](.
 
 ## See The Following Repos For Installing Development Tools and Example Code
 
+- [YouTube Playlist](https://www.youtube.com/playlist?list=PL3by7evD3F52On-ws9pcdQuEL-rYbNNFB) discussing Verilog & using this breakout board
 - [Raspberry PI Setup](https://github.com/johnwinans/raspberry-pi-install)
 - [Icarus Setup & Example Programs](https://github.com/johnwinans/IceStick-Examples-Icarus) (For simulation and debugging)
 - [More Example Programs](https://github.com/johnwinans/Verilog-Examples) (More example programs)
