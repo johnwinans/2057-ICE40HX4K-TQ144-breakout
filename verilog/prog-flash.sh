@@ -149,8 +149,11 @@ cat /sys/class/gpio/gpio${FRESET}/direction
 # AT45DB081 1048576 (256-byte page mode)
 
 TMPBIN=$$.bin
+
 #dd if=/dev/zero bs=1081344 count=1 of=${TMPBIN}
-dd if=/dev/zero bs=1048576 count=1 of=${TMPBIN}
+dd if=/dev/zero bs=1048576 count=1 of=${TMPBIN}			# AT45DB081E 		Digikey: 1265-1092-1-ND
+#dd if=/dev/zero bs=2162688 count=1 of=${TMPBIN}		# AT45DB161E-SHD-T  Digikey: 1265-1035-1-ND  
+
 dd if=$1 of=${TMPBIN} conv=notrunc
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=8000 --write ${TMPBIN}
 rm -f ${TMPBIN}
