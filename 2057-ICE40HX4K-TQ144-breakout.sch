@@ -3921,4 +3921,6 @@ F 9 "GCT" H 14850 5950 60  0001 L CNN "Manufacturer"
 	1    14650 4850
 	1    0    0    -1  
 $EndComp
+Text Notes 9700 7400 0    50   ~ 0
+Alternates:  \nAT45DB161E-SHD-T\nAT45DB161E-SHD2B-T
 $EndSCHEMATC
