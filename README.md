@@ -47,3 +47,13 @@ Direct links to my favorite documents:
 - Change to use USB C connector for power
 - Change SD card signals to connect to J1 (instead of J2)
 - Change push buttons to use J1 (instead of J2)
+
+# Alternate Parts
+
+Substitutions for U4 (the FLASH chip) include:
+- Digikey #1265-1035-1-ND AT45DB161E-SHD-T
+- Digikey #1265-1041-1-ND AT45DB161E-SHD2B-T
+
+If you substitute the FLASH then see the comments regarding setting the total number of bytes to program circa line 150 in: [verilog/prog-flash.sh](verilog/prog-flash.sh)
+
+
