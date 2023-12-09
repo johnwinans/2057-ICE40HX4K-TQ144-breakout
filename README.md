@@ -32,7 +32,7 @@ Direct links to my favorite documents:
 - iCE40 Programming and Configuration Techincal Note TN1248 [pdf](https://www.latticesemi.com/view_document?document_id=46502)
 - iCE40 sysCLOCK PLL Design and User Guide [pdf](https://www.latticesemi.com/view_document?document_id=47778)
 - Memory Usage Guide for iCE40 Devices [pdf](https://www.latticesemi.com/view_document?document_id=47775)
-
+- It looks like updated versions of various manuals appear here: https://www.latticesemi.com/Products/FPGAandCPLD/iCE40
 
 # Release Notes
 
