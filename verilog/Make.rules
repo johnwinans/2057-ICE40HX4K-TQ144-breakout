@@ -58,33 +58,32 @@ $(DOXY_DIRS):
 ###################################################################
 
 COMPILE.v	?= yosys
+COMPILE_OPT ?=
+SYNTH       ?= synth_ice40
 NEXTPNR 	?= nextpnr-ice40
-ARACHNE		?= arachne-pnr
-DEVICE		?= 8k
-FOOTPRINT	?= tq144:4k
-PINMAP 		?= pinmap.pcf
+NEXTPNR_OPT ?=
+NEXTPNR_FMT ?= asc
+PACK        ?= icepack
 
-# useful for single-file builds
-%.blif : %.v
-	$(COMPILE.v) -p "synth_ice40 -top top -blif $@" $<
+DEVICE		?= hx8k
+PACKAGE		?= tq144:4k
+FLASH_PROG  ?= sudo $(TOP)/prog-2057-flash.sh
+PIN_FMT     ?= pcf
+PINMAP 		?= pinmap.pcf
+FREQ        ?= 25
+
 
 # useful for single-file builds
 %.json : %.v
 	$(COMPILE.v) -p "synth_ice40 -top top -json $@" $<
 
-
 # Use nextpnr-ice40 to build from a JSON file
-#%.asc : %.json
-#	$(NEXTPNR) --hx$(DEVICE) --package $(FOOTPRINT) --pcf $(PINMAP) --asc $@ --json $<
-
-# Use arachne-pnr to build from a BLIF file 
-%.asc : %.blif
-	$(ARACHNE) -d $(DEVICE) --package $(FOOTPRINT) -p $(PINMAP) -o $@ $< 
-
+%.asc : %.json
+	$(NEXTPNR) --$(DEVICE) --package $(PACKAGE) --$(PIN_FMT) $(PINMAP) --freq $(FREQ) $(NEXTPNR_OPT) --$(NEXTPNR_FMT) $@ --json $<
 
 # make a binary config file from an ASC file
 %.bin : %.asc
-	icepack $< $@
+	$(PACK) $< $@
 
 %.vcd: %.vvp
 	vvp $<

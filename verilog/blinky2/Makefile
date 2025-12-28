@@ -1,7 +1,5 @@
 TOP=..
 
-DEVICE    = 8k
-FOOTPRINT = tq144:4k
 
 .PHONY: all clean burn world timings
 
@@ -13,8 +11,8 @@ all:: top.bin
 
 include $(TOP)/Make.rules
 
-top.blif: $(FILES)
-	$(COMPILE.v) -p "synth_ice40 -top top -blif $@" $(FILES)
+top.json : $(FILES)
+	$(COMPILE.v) -p "$(SYNTH) -top top -json $@" $^
 
 
 timing: top.asc
